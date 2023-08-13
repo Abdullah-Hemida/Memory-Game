@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="control-button">
+        <span>Start Game</span>
+    </div>  
+<div class="memory-game">
+    <div class="level">
+        <label for="selected-level"> Select level</label>
+            <select name="selected-level" id="selected-level" style="color: green;" data-time="300" data-tries="20">
+                <option data-color="green" data-time="200" data-tries="25" value="Easy">Easy</option>
+                <option data-color="blue" data-time="150" data-tries="20" value="Medium">Medium</option>
+                <option data-color="red" data-time="100" data-tries="15" value="Hard">Hard</option>
+            </select>
+        </div>
+    <div class="game-info">
+        <div class="person-name">Hello : <span></span></div>
+        <div class="score">
+            <div class="wrong-tries">wrong tries : <span></span></div>
+            <div class="total-tries">from : <span></span></div>
+        </div>
+        <span class="game-time">the time : <span></span>Sec.</span>
+    </div>
+    
+    <div class="box-container">
+       <div class="box" data-picture=".NET">
+           <div class="face front"></div>
+           <div class="face back ">
+            <img src="media\Microsoft_.NET_logo.svg.png" alt="">
+           </div>
+       </div>
+
+       <div class="box" data-picture=".NET">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\Microsoft_.NET_logo.svg.png" alt="">
+        </div>
+       </div>
+
+       <div class="box" data-picture="CSS3">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media/CSS3_logo_and_wordmark.svg.png" alt="">
+        </div>
+           
+       </div>
+
+       <div class="box" data-picture="CSS3">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media/CSS3_logo_and_wordmark.svg.png" alt="">
+        </div>
+           
+       </div>
+
+       <div class="box" data-picture="github">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media/github.png" alt="">
+        </div>
+       </div>
+
+       <div class="box" data-picture="github">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media/github.png" alt="">
+        </div>   
+       </div>
+
+       <div class="box" data-picture="Vue.js">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\images-Vue.js.png" alt="">
+        </div>    
+       </div>
+
+       <div class="box" data-picture="Vue.js">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\images-Vue.js.png" alt="">
+        </div>      
+       </div>
+
+       <div class="box" data-picture="html">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\images html.png" alt="">
+        </div>
+       </div>
+
+       <div class="box" data-picture="html">
+           <div class="face front"></div>
+           <div class="face back">
+            <img src="media\images html.png" alt="">
+           </div>
+       </div>
+
+       <div class="box" data-picture="PHP">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\PHP-logo.svg.png" alt="">
+        </div>          
+       </div>
+
+       <div class="box" data-picture="PHP">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\PHP-logo.svg.png" alt="">
+        </div>          
+       </div>
+
+       <div class="box" data-picture="Python">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\Python-logo-notext.svg.png" alt="">
+        </div>  
+       </div>
+
+       <div class="box" data-picture="Python">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\Python-logo-notext.svg.png" alt="">
+        </div>
+       </div>
+
+       <div class="box" data-picture="Angular">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\Angular_full_color_logo.svg.png" alt="">
+        </div>   
+       </div>
+
+       <div class="box" data-picture="Angular">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\Angular_full_color_logo.svg.png" alt="">
+        </div>           
+       </div>
+
+       <div class="box" data-picture="react">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\1631110818-logo-react-js.png" alt="">
+        </div>          
+       </div>
+
+       <div class="box" data-picture="react">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\1631110818-logo-react-js.png" alt="">
+        </div>          
+       </div> 
+
+       <div class="box" data-picture="java">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\b82aa7ac3f736dd78570dd3fa3fa9e24-java-programming-language-icon.png" alt="">
+        </div>
+       </div>
+
+       <div class="box"data-picture="java">
+        <div class="face front"></div>
+        <div class="face back">
+            <img src="media\b82aa7ac3f736dd78570dd3fa3fa9e24-java-programming-language-icon.png" alt="">
+        </div>    
+       </div>
+    </div>
+</div>
+<script src="main.js"></script>   
+</body>
+</html>

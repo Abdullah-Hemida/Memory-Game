@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+.control-button {
+    background-color: #00ffffd1;
+    width: 100vw;
+    height: 100vw;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.control-button span {
+    position: absolute;
+    top: 25%;
+    width: 150px;
+    height: 40px;
+    background-color: indianred;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.memory-game {
+    width: 600px;
+    height: 700px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memory-game label {
+    font-size: 18px;
+}
+.memory-game .level {
+   position: relative;
+   margin-bottom: 10px;    
+}
+
+.memory-game .level select {
+    font-size: 16px;
+    width: 100px;
+}
+
+.memory-game .level select option:first-child , .green {
+color: green;
+}
+.memory-game .level select option:nth-child(2), .blue {
+color: blue;
+}
+.memory-game .level select option:nth-child(3), .red {
+color: red;
+}
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    border: 3px solid #ff9800;
+    margin-bottom: 5px;
+    align-items: center;
+    background-color: #6a9fc9;
+    padding: 20px 10px;
+}
+
+.game-info .person-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -25px;
+}
+
+.game-info .score {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    font-weight: bold;
+}
+
+.game-info .score .wrong-tries span{
+    padding: 1px 6px;
+}
+
+.game-info .score .total-tries span{
+    padding: 2px 6px;
+    color: green;
+}
+
+.game-info .game-time {
+    font-size: 18px;
+    width: 150px;   
+}
+
+.game-info .game-time span{
+    padding: 2px 6px;
+    color: green;
+}
+
+.box-container {
+    width: 610px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container .box {
+    width: 112px;
+    height: 112px;
+    margin: 5px;
+    border: 3px solid #ff9800;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(180deg);
+    position: relative;
+    cursor: pointer;
+}
+
+.box-container .box.is-fliped {
+    transform: rotateY(0deg);
+}
+
+.box-container .box.is-matched {
+    transform: rotateY(0deg);
+    pointer-events: none;
+}
+
+.box-container .box .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.box-container .box .front {
+    background-color: #333;
+}
+
+.box-container .box .front::before{
+content: "!";
+top: 50%;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 100px;
+font-weight: bold;
+color: rgb(216, 202, 202);    
+}
+
+.box-container .box .back {
+    background-color: white;
+    backface-visibility: hidden;
+}
+
+.box-container .box .back img {
+  width: 100%;
+  height: 100%;
+}
+
+.stop-clicking {
+  pointer-events: none;
+}
+
+.my-popup {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(203, 209, 209);
+    z-index: 999;
+    border-radius: 6px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.my-popup .close-button {
+    position: absolute;
+    right: -3px;
+    top: -8px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: red;
+    padding: 5px 9px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+.my-popup .the-message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: #c33232;
+}
+
+.my-popup .the-level {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    font-size: 20px;
+    color: #c33232;
+    font-weight: bold;
+}
+.my-popup .the-level span{
+color: green;
+}
